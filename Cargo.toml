@@ -1,6 +1,6 @@
 [package]
 name = "ark-nonnative-field"
-version = "0.2.0"
+version = "0.3.0"
 authors = [
     "Weikeng Chen",
     "Alessandro Chiesa",
@@ -41,6 +41,7 @@ derivative = { version = "2", features = [ "use_core" ] }
 
 tracing = { version = "0.1", default-features = false, features = [ "attributes" ] }
 
+
 ark-ff = { git = "https://github.com/SRI-CSL/algebra", default-features = false }
 ark-ec = { git = "https://github.com/SRI-CSL/algebra", default-features = false }
 ark-std = { git = "https://github.com/SRI-CSL/utils", default-features = false }
@@ -55,6 +56,7 @@ num-integer = { version = "0.1.44", default-features = false }
 
 [dev-dependencies]
 paste = "1.0"
+
 ark-bls12-377 = {git = "https://github.com/SRI-CSL/curves", features = ["curve"], default-features = false  }
 ark-bls12-381 = { git = "https://github.com/SRI-CSL/curves", features = ["curve"], default-features = false  }
 ark-mnt4-298 = { git = "https://github.com/SRI-CSL/curves", features = ["curve"], default-features = false  }
@@ -62,6 +64,7 @@ ark-mnt4-753 = { git = "https://github.com/SRI-CSL/curves", features = ["curve"]
 ark-mnt6-298 = { git = "https://github.com/SRI-CSL/curves", default-features = false  }
 ark-mnt6-753 = { git = "https://github.com/SRI-CSL/curves", default-features = false  }
 ark-pallas = { git = "https://github.com/SRI-CSL/curves", features = ["curve"],  default-features = false  }
+
 
 [features]
 default = []
